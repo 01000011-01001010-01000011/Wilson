@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+     <link rel="stylesheet" href="index.css" type="text/css">        
+      
+    <title>Water Demo</title>
+  
+  </head>
+
+  <body>
+
+    <div class="container"> 
+      <div class="controls-container">
+        <div class="controls"></div>
+      </div>                 
+      
+      <canvas id="canvas" aria-description="A 3D animation scene consisting of a 3D cube, covered with computer code and images on each face, floating over an ocean with the sun beginning to rise over the horizon."></canvas>
+     
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.9/dat.gui.min.js"></script>
+      <script type="module" src="main.js"></script>   
+
+      <script>
+      
+        window.addEventListener("orientationchange", function(){
+
+          this.location.reload();
+
+        });
+
+      </script>
+
+    </div>
+
+  </body>
+
+</html>
+
+<!-- vertex shader based on the work of Mr. Doob and Sean Bradley's Gerstner Shader :
+  https://github.com/Sean-Bradley/three.js/blob/gerstner-waves/examples/webgl_shaders_ocean_gerstner.html
+-->
+
+<!-- cloud shader based on Shader Toy  https://www.shadertoy.com/view/XslGRr -->
