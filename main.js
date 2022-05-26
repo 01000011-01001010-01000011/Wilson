@@ -66,8 +66,8 @@ let skyUniforms = {
   iResolution: {
     type: "2f",
     value: {
-      x: window.innerWidth,
-      y: window.innerHeight
+      x: window.innerWidth * 1.5,
+      y: window.innerHeight *1.5
     }
   },
   iGlobalTime: {
