@@ -191,7 +191,7 @@ function getRenderer(){
         textureWidth: 1024,
         textureHeight: 1024,
     
-      waterNormals:  new THREE.TextureLoader().load('./normals/water2.jpg',  
+      waterNormals:  new THREE.TextureLoader().load('/normals/water2.jpg',  
         function(texture){
           texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
         }),            
